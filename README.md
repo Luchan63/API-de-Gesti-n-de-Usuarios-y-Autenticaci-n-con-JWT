@@ -8,6 +8,7 @@ Este proyecto es una aplicación completa de gestión de usuarios con roles y au
 ### Frontend:
 - **React**: Biblioteca de JavaScript para construir interfaces de usuario.
 - **Vite**: Herramienta de desarrollo rápida para React.
+- **javaScript**: Lenguaje de programación para la logica del frontend.
 - **HTML5**: Lenguaje de marcado para estructurar el contenido web.
 - **Bootstrap**: Framework de CSS para el diseño responsivo y componentes UI.
 
