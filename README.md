@@ -1,6 +1,4 @@
 
-
-```md
 # API de Gestión de Usuarios y Autenticación con JWT
 
 Este proyecto es una aplicación completa de gestión de usuarios con roles y autenticación, que incluye un frontend desarrollado con React y Vite, y un backend utilizando Spring Boot, Java y MySQL. La autenticación se realiza mediante JWT (JSON Web Tokens) para garantizar la seguridad.
@@ -76,4 +74,4 @@ Este proyecto es una aplicación completa de gestión de usuarios con roles y au
 
 **Luis Anibal Figuereo Ali**  
 Desarrollador Web Junior especializado en Java, React y Spring Boot.
-```
+
