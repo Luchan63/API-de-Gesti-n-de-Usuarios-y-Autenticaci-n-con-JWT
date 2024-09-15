@@ -77,7 +77,3 @@ Este proyecto es una aplicación completa de gestión de usuarios con roles y au
 **Luis Anibal Figuereo Ali**  
 Desarrollador Web Junior especializado en Java, React y Spring Boot.
 ```
-
----
-
-Este archivo `README.md` explica el propósito del proyecto, las tecnologías utilizadas y proporciona instrucciones para configurar tanto el frontend como el backend.
