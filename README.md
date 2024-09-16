@@ -1,11 +1,9 @@
 <table align= "center">
   <tr>
+    <td><img src="https://github.com/user-attachments/assets/22992f16-b5c2-4bba-ac99-ccd164e3489b" alt="JavaScript + React + Vite" width="90" /></td>
     <td><img src="https://github.com/user-attachments/assets/23888328-f831-4250-ac0b-b3e0db55a89c" alt="Java" width="50" /></td>
     <td><img src="https://github.com/user-attachments/assets/c6b75730-c3cf-41a1-82fb-d40e17bfd097" alt="Spring Boot" width="50" /></td>
-    <td><img src="https://github.com/user-attachments/assets/d8081359-309e-4e88-bba4-b5238536c88e" alt="Kubernetes" width="80" /></td>
-    <td><img src="https://github.com/user-attachments/assets/aa5fb147-5b81-416e-b656-15e28ad566b9" alt="Docker" width="50" /></td>
     <td><img src="https://github.com/user-attachments/assets/f3c6c52e-9c3d-419f-b0a0-9c34d01c3728" alt="MySQL" width="50" /></td>
-    <td><img src="https://github.com/user-attachments/assets/bdca9eef-307e-4309-822c-95edebe52906" alt="PostgreSQL" width="50" /></td>
     <td><img src="https://github.com/user-attachments/assets/114f2c7f-7cda-4494-ad3e-2a03fbdadab4" alt="JWT" width="80" /></td>
   </tr>
 </table>
