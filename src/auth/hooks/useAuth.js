@@ -2,7 +2,7 @@ import Swal from "sweetalert2";
 import { LoginUser } from "../service/authService";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { onLogin, onLogout } from "../../store/slices/auth/authSlice";
+import { onLogin, onLogout, onIntLogin } from "../../store/slices/auth/authSlice";
 
 
 export const initialLoginForm = {
@@ -12,7 +12,6 @@ export const initialLoginForm = {
 
 export const useAuth = () => {
 
-    // const [loginAuth, dispatch] = useReducer(loginReducer, initialLogin);
 
     const dispatch = useDispatch();
 
@@ -23,6 +22,8 @@ export const useAuth = () => {
     const handlerLogin = async ({ username, password }) => {
 
         try {
+
+            dispatch(onIntLogin());
             const response = await LoginUser({ username, password });
             const token = response.data.token;
             const claim = JSON.parse(window.atob(token.split(".")[1]));
@@ -31,7 +32,7 @@ export const useAuth = () => {
 
 
             dispatch(onLogin({ user, isAdmin: claim.isAdmin }));
-        
+
             sessionStorage.setItem('login', JSON.stringify({
                 isAuth: true,
                 isAdmin: claim.isAdmin,
@@ -43,11 +44,13 @@ export const useAuth = () => {
             navigate('/users');
 
         } catch (error) {
+            dispatch(onLogout());
             if (error.response?.status == 401) {
                 Swal.fire('Error Login', 'Username o password invalidos', 'error');
             } else if (error.response?.status == 403) {
                 Swal.fire('Error Login', 'No tiene acceso al recurso o permiso', 'error');
             } else
+
                 throw error;
         }
     }
